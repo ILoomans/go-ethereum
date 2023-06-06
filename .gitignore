@@ -48,3 +48,7 @@ profile.cov
 
 **/yarn-error.log
 logs/
+
+
+# ignore data/geth folder
+data/geth
