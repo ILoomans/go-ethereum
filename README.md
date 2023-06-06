@@ -29,7 +29,17 @@ or, to build the full suite of utilities:
 make all
 ```
 
-## Executables
+
+## Quick Deployment
+
+These commands will setup a POA ethereum network. You must install the aforementioned dependencies & together with node & npm in order to deploy the test smart contract. 
+
+```shell
+$ make geth
+$ bash scripts/standAloneNetwork.sh
+$ bash scripts/deployContract.sh # Run this in a seperate terminal
+```
+<!-- ## Executables
 
 The go-ethereum project comes with several wrappers/executables found in the `cmd`
 directory.
@@ -313,7 +323,7 @@ $ geth <usual-flags> --mine --miner.threads=1 --miner.etherbase=0x00000000000000
 Which will start mining blocks and transactions on a single CPU thread, crediting all
 proceedings to the account specified by `--miner.etherbase`. You can further tune the mining
 by changing the default gas limit blocks converge to (`--miner.targetgaslimit`) and the price
-transactions are accepted at (`--miner.gasprice`).
+transactions are accepted at (`--miner.gasprice`). -->
 
 ## Contribution
 
